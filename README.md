@@ -36,7 +36,7 @@ When both the inputs given are same, we get logic high as output indicating us t
 
 The CMOS design for XNOR is shown in fig. 
 
-![image]()
+![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/circuit.png)
 
 - SCHEMATIC
 
@@ -49,7 +49,7 @@ The CMOS design for XNOR is shown in fig.
 
 - TESTBENCH SYMBOL
 
-![image]()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/sim_schem.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 - PRIMEWAVE WINDOW
 
 ![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/testsuit_pathway.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                        
@@ -57,6 +57,8 @@ The CMOS design for XNOR is shown in fig.
 
 ![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/waveform.png)                                            
 
+# NETLIST
+The netlist of the above circuit has also been uploaded to the github repo with the file name - netlist.txt  
 
 # AUTHOR
 P R RAHUL HEBBAR, MTech VLSI and Embedded Systems , Defence Institute of Advanced Technology, Pune, Maharashtra
