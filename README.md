@@ -1,4 +1,4 @@
-# Implementation of XNOR Using 28nm CMOS Technology
+# Implementation of XNOR Using 6 MOS Transistors and 28nm CMOS Technology
 XNOR gate (One Bit Equality Comparator) is designed using 28nm CMOS technology by using Synopsys Custom Compiler
 
 
