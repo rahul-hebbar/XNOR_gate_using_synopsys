@@ -1,0 +1,67 @@
+*  Generated for: PrimeSim
+*  Design library name: main_lib
+*  Design cell name: xnor_sim
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Mon Feb 28 06:10:09 2022
+
+.global gnd!
+********************************************************************************
+* Library          : main_lib
+* Cell             : xnor
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt xnor a b gnd_1 vdc x
+xm2 a b net41 net10 n25 w=0.36u l=0.26u nf=1 m=1
+xm1 x net41 gnd_1 net6 n25 w=0.36u l=0.26u nf=1 m=1
+xm0 net39 a gnd_1 net2 n25 w=0.36u l=0.26u nf=1 m=1
+xm5 net39 b net41 net22 p25 w=0.36u l=0.26u nf=1 m=1
+xm4 x net41 vdc net18 p25 w=0.36u l=0.26u nf=1 m=1
+xm3 net39 a vdc net14 p25 w=0.36u l=0.26u nf=1 m=1
+.ends xnor
+
+********************************************************************************
+* Library          : main_lib
+* Cell             : xnor_sim
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 inp1 inp2 gnd! net6 output xnor
+v2 net6 gnd! dc=1.8
+v4 inp2 gnd! dc=0 pulse ( 0 01.8 0 0.1u 0.1u 10u 20u )
+v3 inp1 gnd! dc=0 pulse ( 0 1.8 0 0.1u 0.1u 5u 10u )
+c5 output gnd! c=1p
+
+
+
+
+
+
+
+
+.tran '0.1u' '25u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(inp1) v(inp2) v(output)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
