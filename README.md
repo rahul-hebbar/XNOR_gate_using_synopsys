@@ -20,7 +20,7 @@ XNOR is a Hybrid gate which has OR, AND and NOT operation done to the inputs. XN
 
 In the Figure below, we have achieved XNOR operation only by using 3 NMOS and 3 PMOS transistors. The circuit consists of 2 CMOS inverters and 2 MOS pass gate configuration. By clever logic hack we have achieved XNOR logic using less number of transistors.
 
-![image]()
+![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/xnor.png)
 
 When both the inputs given are same, we get logic high as output indicating us that both the inputs are of same logic. When both inputs are of different logics, we get a logic low.
 
@@ -37,26 +37,25 @@ When both the inputs given are same, we get logic high as output indicating us t
 The CMOS design for XNOR is shown in fig. 
 
 ![image]()
-![image]()
 
 - SCHEMATIC
 
-![image]()
+![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/schematic.png)
 
                                                                                                                                                                                                                                                                                                                                                                             
 - SYMBOL
 
-![image]()                                                                                                                                                                                                                                                                                                                                                                               
+![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/symbol.png)                                                                                                                                                                                                                                                                                                                                                                               
 
 - TESTBENCH SYMBOL
 
 ![image]()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 - PRIMEWAVE WINDOW
 
-![image]()                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/testsuit_pathway.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 - TESTBENCH WAVEFORM
 
-![image]()                                            
+![image](https://github.com/rahul-hebbar/XNOR_gate_using_synopsys/blob/main/images/waveform.png)                                            
 
 
 # AUTHOR
